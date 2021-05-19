@@ -1,6 +1,9 @@
 #include <string>
 #include <cstdio>
-
+#include <chrono>
+#include <random>
+#include <vector>
+using std::vector;
 using std::string;
 
 
@@ -30,4 +33,6 @@ private:
     ListNode *head;
     ListNode *tail;
     int count;
+
+    std::default_random_engine generator;
 };
